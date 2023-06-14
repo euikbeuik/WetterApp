@@ -26,7 +26,7 @@ public class Api {
             conn.disconnect();
 
             Gson gson = new Gson();
-            WeatherData weatherData = gson.fromJson(responseData, WetterTag.class);
+            WetterTag weatherData = gson.fromJson(responseData, WetterTag.class);
 
         } catch (Exception e) {
             System.out.println("Exception in NetClientGet:- " + e);
